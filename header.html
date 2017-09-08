@@ -1,0 +1,52 @@
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	  var arr = location.href.split("/")
+	  if (arr[arr.length -2] == 'html'){
+        $.ajax({
+             url: 'http://dearness.co/js/script.js',
+             dataType: 'script',
+             cache: false
+        });
+    } else {
+         $.ajax({
+             url: 'http://dearness.co/js/script.js',
+             dataType: 'script',
+             cache: false
+        });
+    };
+});
+</script>
+<div id="header">
+	<h1><a href="http://dearness.co/"><img src="http://dearness.co/images/logo.png" class="logo" alt="Dearness -Shinagawa-" /></a></h1>
+	<nav id="mainnav">
+		<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+		<div class="panel">
+			<ul>
+				<li><a href="http://dearness.co/">HOME</a></li>
+				<li><a href="http://dearness.co/concept/">CONCEPT</a></li>
+				<li><a href="http://dearness.co/menu/">MENU</a></li>
+				<li><a href="http://dearness.co/staff/">STAFF</a></li>
+				<li><a href="http://dearness.co/recruit/">RECRUIT</a></li>
+				<li><a href="http://dearness.co/reservation/">RESERVATION</a></li>
+				<li><a href="http://dearness.co/contact/">CONTACT</a></li>
+				<li><a href="http://dearness.co/access/">ACCESS</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<script>
+	var arr = location.href.split("/")
+	if (arr[arr.length -2] != 'html'){
+		$('.logo').attr({'src': 'http://dearness.co/images/logo.png'});
+	}
+</script>
+<script>
+ var arr = location.href.split("/")
+ if (arr[arr.length -2] != 'html'){
+  var e = $('.panel ul li');
+  for(var i = 0; i<e.length; i++){
+   var path = $('.panel ul li a')[i].getAttribute('href').replace(/^\.\//, '../')
+   $('.panel ul li a')[i].setAttribute('href', path);
+  }
+ }
+</script>

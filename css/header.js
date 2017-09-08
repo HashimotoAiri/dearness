@@ -1,0 +1,1 @@
+document.write('<h1><a href="index.html"><img src="images/logo.png" class="logo" alt="Dearness -Shinagawa-" /></a></h1><img src="images/sample.jpg" class="full" />')

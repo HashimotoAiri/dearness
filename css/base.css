@@ -499,6 +499,11 @@ span.footer_text_large{
 	padding-top:1%;
 }
 
+.footer_link{
+	width:230px;
+	margin-bottom:30px;
+}
+
 .copyRight {
 	width:100%;
 	background-color:#E9CCCC;

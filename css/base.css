@@ -26,10 +26,6 @@ body{
 	margin:0!important;
 }
 
-.bx-wrapper img{
-	height:auto !important;
-}
-
 .bxslider {
 	padding:0;
 }
@@ -497,11 +493,6 @@ span.footer_text_large{
 .footer_banner img.footer_ban_img{
 	width:90%;
 	padding-top:1%;
-}
-
-.footer_link{
-	width:230px;
-	margin-bottom:30px;
 }
 
 .copyRight {
